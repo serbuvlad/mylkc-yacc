@@ -1,17 +1,17 @@
 Super early mylkc parser prototype
 ==================================
 
-###Usage:
+### Usage:
 
 Write a series of statements on standard in, then set a breakpoint at
 `main.c:13` and look at the pretty AST in the global variable `file`:
 type `AST_Test_Stmts *`, see `ast.h` for details.
 
-###Supported statements:
+### Supported statements:
 
 * expression statement
 
-###Supported expressions:
+### Supported expressions:
 
 * addition
 * function call
