@@ -4,7 +4,7 @@
 
 extern int yyparse(void);
 
-AST_Test_Stmts *file;
+AST_Program *file;
 
 int main()
 {
