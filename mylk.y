@@ -334,7 +334,7 @@ char unescape(char c)
 AST_StrLit *plit_str(const char *text)
 {
 	AST_StrLit *str = calloc(1, sizeof(AST_StrLit));
-	size_t i, len = strlen(text);
+	size_t i, len;
 
 	if (text[0] == 'u') {
 		switch (text[3]) {
@@ -351,6 +351,8 @@ AST_StrLit *plit_str(const char *text)
 			text += 5;
 		}
 	}
+
+	len = strlen(text);
 
 	/* Eliminate delimitating "s */
 	text++;
