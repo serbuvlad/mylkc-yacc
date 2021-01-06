@@ -7,7 +7,7 @@ Write a program standard in, then set a breakpoint at
 `main.c:13` and look at the pretty AST in the global variable `file`:
 type `AST_Program *`, see `ast.h` for details.
 
-###Support
+### Support
 
 All top level constructs are supported. The only supported statement is the expression statement.
 The only supported expressions are addition and function call. The only supported type is "int".
